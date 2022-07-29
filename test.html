@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+  </head>
+  <body>
+    <h1>jQuery Test Page</h1>
+    <div id="yetAnotherDiv">
+      <ul>
+        <li>hi</li>
+        <li>hi</li>
+        <li>hi</li>
+        <li>hi</li>
+        <li>hi</li>
+      </ul>
+    </div>
+
+    <script>
+      $("document").ready(function () {
+        $("div#yetAnotherDiv li:nth-child(even)").css(
+          "background-color",
+          "blue"
+        );
+        $("div#yetAnotherDiv li").hide();
+
+        $("div#yetAnotherDiv")
+          .hide()
+          .fadeIn(3000, function () {
+            $("div#yetAnotherDiv li").each(function () {
+              $(this).slideDown(2000);
+            });
+          });
+      });
+    </script>
+  </body>
+</html>
