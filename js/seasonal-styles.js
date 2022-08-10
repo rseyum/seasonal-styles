@@ -48,7 +48,7 @@ $("document").ready(function () {
       case "Default":
         {
           $("html").css("background-color", "black");
-          $("#wear").attr("src", "images/Eddie4.jpg");
+          $("#wear").attr("src", "images/default.jpg");
           $("#logo").attr("src", "images/four-seasons.gif");
           $("header h3").text("Nothing like the Ol' Reliable, Default!");
         }
